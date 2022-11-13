@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Text?>
+
+<GridPane fx:id="view" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/19">
+  <columnConstraints>
+    <ColumnConstraints hgrow="SOMETIMES" maxWidth="214.0" minWidth="-Infinity" prefWidth="211.0" />
+    <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" maxWidth="198.0" minWidth="175.0" prefWidth="184.0" />
+      <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+  </columnConstraints>
+  <rowConstraints>
+    <RowConstraints maxHeight="-Infinity" minHeight="-Infinity" vgrow="SOMETIMES" />
+    <RowConstraints maxHeight="-Infinity" valignment="CENTER" vgrow="SOMETIMES" />
+    <RowConstraints minHeight="10.0" prefHeight="30.0" valignment="CENTER" vgrow="SOMETIMES" />
+  </rowConstraints>
+   <children>
+      <HBox>
+         <children>
+            <Button fx:id="setStagePartida" mnemonicParsing="false" text="Partida" />
+            <Button fx:id="setStagePalabras" mnemonicParsing="false" text="Palabras" />
+            <Button fx:id="setStagePuntuaciones" mnemonicParsing="false" text="Puntuaciones" />
+         </children>
+      </HBox>
+      <Text fx:id="palabra" strokeType="OUTSIDE" strokeWidth="0.0" text="Partida" textAlignment="CENTER" wrappingWidth="194.142578125" GridPane.columnIndex="1" GridPane.rowIndex="1">
+         <GridPane.margin>
+            <Insets bottom="30.0" top="30.0" />
+         </GridPane.margin>
+      </Text>
+      <TextField fx:id="textInput" GridPane.rowIndex="2" />
+      <Button mnemonicParsing="false" onAction="#letraButton" text="Letra" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+      <Button mnemonicParsing="false" onAction="#palabraButton" text="Palabra" GridPane.columnIndex="2" GridPane.rowIndex="2" />
+      <Text fx:id="vidas" strokeType="OUTSIDE" strokeWidth="0.0" text="Vidas" GridPane.columnIndex="2" />
+   </children>
+</GridPane>
